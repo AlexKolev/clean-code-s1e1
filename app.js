@@ -35,7 +35,7 @@ var createNewTaskElement = function (taskString) {
 
 
   label.innerText = taskString;
-  label.className = 'task';
+  label.className = "task";
   label.classList.add("label-main-element");
 
   //Each elements, needs appending
@@ -49,8 +49,8 @@ var createNewTaskElement = function (taskString) {
 
   deleteButton.className = "delete";
   deleteButton.classList.add("btn-main-element");
-  deleteButtonImg.src = './remove.svg';
-  deleteButtonImg.alt = 'picture for remove button';
+  deleteButtonImg.src = "./remove.svg";
+  deleteButtonImg.alt = "picture for remove button";
   deleteButton.appendChild(deleteButtonImg);
 
 
@@ -83,12 +83,12 @@ var addTask = function () {
 
 var editTask = function () {
   console.log("Edit Task...");
-  console.log("Change 'edit' to 'save'");
+  console.log("Change edit to save");
 
 
   var listItem = this.parentNode;
 
-  var editInput = listItem.querySelector('.input-main-element[type=text]');
+  var editInput = listItem.querySelector(".input-main-element[type=text]");
   var label = listItem.querySelector(".label-main-element");
   var editBtn = listItem.querySelector(".edit");
   var containsClass = listItem.classList.contains("task-menu__item_edit-mode");
