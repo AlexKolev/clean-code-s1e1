@@ -12,7 +12,7 @@ body {
   text-align: right;
 }
 
-.eisenhower-matrix img {
+.eisenhower-matrix .eisenhower-matrix__img {
   width: 100%;
 }
 
@@ -142,13 +142,13 @@ body {
   width: 226px;
 }
 
-.btn-main-element.delete img {
+.btn-main-element.delete .delete-img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
 
-.btn-main-element.delete img:hover {
+.btn-main-element.delete .delete-img:hover {
   transform: rotateZ(0);
 }
 
